@@ -22,5 +22,6 @@ class Game:
 
     def draw(self):
         self.screen.fill(self.bg_color)
-        self.tiles.draw(self.screen)
+        # self.tiles.draw(self.screen) -- This draws the entire tileset
+        # self.screen.blit(self.tiles.get_tile(0, 0), (72,72)) -- This draws a single tile at specified coordinates
         pygame.display.flip()
