@@ -15,3 +15,6 @@ class Tileset:
         for x, row in enumerate(self.tile_table):
             for y, tile in enumerate(row):
                 screen.blit(tile, (x * 18, y * 18))
+
+    def get_tile(self, x, y):
+        return self.tile_table[x][y]
