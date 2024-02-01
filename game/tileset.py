@@ -1,6 +1,6 @@
 import pygame
 
-class Tileset:
+class Tileset():
     def __init__(self, filename, width, height, rows, cols):
         image = pygame.image.load(filename).convert()
         self.tile_table = []
