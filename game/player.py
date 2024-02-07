@@ -4,7 +4,7 @@ from game.tileset import Tileset
 class Player(pygame.sprite.Sprite):
     def __init__(self,pos,group):
         super().__init__(group)
-        self.image = Tileset('assets/gfx/character.png', 16, 16, 2, 4) #pygame.image.load('assets/gfx/character.png').convert_alpha()
+        self.image = pygame.image.load('assets/gfx/character.png').convert_alpha() #Tileset('assets/gfx/character.png', 16, 16, 2, 4) 
         self.rect = self.image.get_rect(center = pos)
         self.direction = pygame.math.Vector2()
         self.speed = 5
